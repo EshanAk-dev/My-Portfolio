@@ -48,8 +48,27 @@ const projects = [
     github: "https://github.com/EshanAk-dev/NewsPulse",
     featured: true,
   },
+  {
+    id: 4,
+    title: "Hotel Room Reservation Website",
+    description:
+      "A modern full-stack web application for hotel room booking with a React frontend and Spring Boot backend. Users can browse hotels, check room availability, book rooms, and manage their reservations. Admins can manage rooms, view bookings, and access statistics.",
+    image: "/projects/project_4.png",
+    tags: [
+      "React.js",
+      "Bootstrap",
+      "Axios",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "MySQL",
+      "Java"
+    ],
+    demoUrl: "#",
+    github: "https://github.com/EshanAk-dev/Grand-Mount-Hotel",
+    featured: true,
+  },
 ];
-
 
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
