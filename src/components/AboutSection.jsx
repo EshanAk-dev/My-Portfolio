@@ -102,10 +102,10 @@ const AboutSection = () => {
                   <Code className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-primary" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
+                  <h4 className="text-lg text-left sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
                     Clean Code
                   </h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-left sm:text-base text-foreground/70 leading-relaxed">
                     I build full-stack applications using modern tools like
                     React, Node.js, and Flutter — always writing clean,
                     maintainable, and efficient code.
@@ -121,10 +121,10 @@ const AboutSection = () => {
                   <User className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-purple-500" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
+                  <h4 className="text-lg text-left sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
                     User Experience
                   </h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-left sm:text-base text-foreground/70 leading-relaxed">
                     I design smooth, responsive interfaces that focus on
                     usability and user satisfaction across web and mobile
                     platforms.
@@ -140,10 +140,10 @@ const AboutSection = () => {
                   <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-green-500" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
+                  <h4 className="text-lg text-left sm:text-xl font-semibold mb-2 sm:mb-3 text-foreground">
                     Continuous Learning
                   </h4>
-                  <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
+                  <p className="text-sm text-left sm:text-base text-foreground/70 leading-relaxed">
                     As a software engineering student, I'm constantly learning
                     core CS concepts while building real-world projects
                     alongside my studies.
