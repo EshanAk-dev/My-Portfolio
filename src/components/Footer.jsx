@@ -1,8 +1,6 @@
 import {
   ArrowUp,
-  Heart,
   Code,
-  Coffee,
   Github,
   Linkedin,
   Mail,
@@ -106,7 +104,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links & Technologies - side by side on mobile */}
+            {/* Quick Links & Technologies */}
             <div className="flex flex-row gap-6 sm:gap-0">
               {/* Quick Links */}
               <div className="flex-1 space-y-4 lg:mr-50 sm:space-y-6">
@@ -157,7 +155,7 @@ export const Footer = () => {
               {/* Copyright */}
               <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground/60">
                 <span>
-                  &copy; {currentYear} EshanAk-Dev. Alrights Reserved.
+                  &copy; {currentYear} EshanAk-Dev. All rights Reserved.
                 </span>
               </div>
 

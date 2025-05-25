@@ -12,42 +12,47 @@ import {
 
 const skills = [
   // frontend
-  { name: "HTML/CSS", level: 80, category: "frontend", icon: "🎨" },
-  { name: "JavaScript", level: 75, category: "frontend", icon: "⚡" },
-  { name: "React", level: 70, category: "frontend", icon: "⚛️" },
-  { name: "Tailwind CSS", level: 65, category: "frontend", icon: "🎭" },
+  { name: "HTML", category: "frontend", image: "/skills/html.png" },
+  { name: "CSS", category: "frontend", image: "/skills/css.png" },
+  { name: "JavaScript", category: "frontend", image: "/skills/javascript.png" },
+  { name: "React", category: "frontend", image: "/skills/react.png" },
+  { name: "Tailwind CSS", category: "frontend", image: "/skills/tailwind.png" },
 
   // backend
-  { name: "Node.js", level: 70, category: "backend", icon: "🟢" },
-  { name: "Express", level: 65, category: "backend", icon: "🚀" },
-  { name: "Java", level: 75, category: "backend", icon: "☕" },
-  { name: "Spring Boot", level: 60, category: "backend", icon: "🌱" },
-  { name: "Firebase", level: 65, category: "backend", icon: "🔥" },
+  { name: "Node.js", category: "backend", image: "/skills/nodejs.webp" },
+  { name: "Express", category: "backend", image: "/skills/express.png" },
+  { name: "Java", category: "backend", image: "/skills/java.png" },
+  {
+    name: "Spring Boot",
+    category: "backend",
+    image: "/skills/spring-boot.png",
+  },
+  { name: "Firebase", category: "backend", image: "/skills/firebase.png" },
 
   // database
-  { name: "MongoDB", level: 70, category: "database", icon: "🍃" },
-  { name: "MySQL", level: 70, category: "database", icon: "🐬" },
+  { name: "MongoDB", category: "database", image: "/skills/mongodb.png" },
+  { name: "MySQL", category: "database", image: "/skills/mysql.png" },
+  { name: "Oracle", category: "database", image: "/skills/oracle.png" },
 
   // mobile
-  { name: "Flutter", level: 70, category: "mobile", icon: "📱" },
-  { name: "Dart", level: 70, category: "mobile", icon: "🎯" },
-  { name: "Kotlin", level: 60, category: "mobile", icon: "🤖" },
+  { name: "Flutter", category: "mobile", image: "/skills/flutter.png" },
+  { name: "Dart", category: "mobile", image: "/skills/dart.png" },
+  { name: "Kotlin", category: "mobile", image: "/skills/kotlin.png" },
 
   // tools
-  { name: "Git/GitHub", level: 75, category: "tools", icon: "🔧" },
-  { name: "Postman", level: 65, category: "tools", icon: "📮" },
-  { name: "VS Code", level: 85, category: "tools", icon: "💻" },
+  { name: "GitHub", category: "tools", image: "/skills/github.png" },
+  { name: "Git", category: "tools", image: "/skills/git.png" },
+  { name: "Postman", category: "tools", image: "/skills/postman.png" },
+  { name: "VS Code", category: "tools", image: "/skills/vscode.png" },
 ];
 
-
-
 const categories = [
-  { id: "all", name: "All Skills", icon: Star, color: "primary" },
-  { id: "frontend", name: "Frontend", icon: Palette, color: "blue-500" },
-  { id: "backend", name: "Backend", icon: Server, color: "green-500" },
-  { id: "database", name: "Database", icon: Database, color: "yellow-500" },
-  { id: "mobile", name: "Mobile", icon: Smartphone, color: "purple-500" },
-  { id: "tools", name: "Tools", icon: Wrench, color: "orange-500" },
+  { id: "all", name: "All Skills", icon: Star },
+  { id: "frontend", name: "Frontend", icon: Palette },
+  { id: "backend", name: "Backend", icon: Server },
+  { id: "database", name: "Database", icon: Database },
+  { id: "mobile", name: "Mobile", icon: Smartphone },
+  { id: "tools", name: "Tools", icon: Wrench },
 ];
 
 const SkillsSection = () => {
@@ -56,12 +61,6 @@ const SkillsSection = () => {
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
-
-  const getSkillColor = (level) => {
-    if (level >= 80) return "from-green-500 to-emerald-400";
-    if (level >= 60) return "from-primary to-blue-400";
-    return "from-orange-500 to-yellow-400";
-  };
 
   return (
     <section
@@ -85,8 +84,7 @@ const SkillsSection = () => {
             </span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and expertise across
-            various domains
+            Technologies and tools I work with across various domains
           </p>
         </div>
 
@@ -121,12 +119,12 @@ const SkillsSection = () => {
           })}
         </div>
 
-        {/* Skills Grid - Updated for 2 columns on mobile */}
+        {/* Skills Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="group glass-effect p-3 sm:p-4 md:p-6 rounded-xl md:rounded-2xl card-hover relative overflow-hidden border border-border/50"
+              className="group glass-effect p-4 sm:p-5 md:p-6 rounded-xl md:rounded-2xl card-hover relative overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300"
               style={{
                 opacity: 0,
                 animation: `fade-in 0.6s ease-out ${key * 0.1}s forwards`,
@@ -135,57 +133,28 @@ const SkillsSection = () => {
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-primary/5 rounded-full -translate-y-6 translate-x-6 sm:-translate-y-8 sm:translate-x-8 md:-translate-y-10 md:translate-x-10 group-hover:bg-primary/10 transition-colors duration-300"></div>
 
-              {/* Skill Header */}
-              <div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 mb-3 sm:mb-4">
-                <div className="text-lg sm:text-xl md:text-2xl p-2 sm:p-2.5 md:p-3 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 group-hover:border-primary/40 transition-all duration-300">
-                  {skill.icon}
-                </div>
-                <div className="text-center flex-1">
-                  <h3 className="font-semibold text-xs sm:text-sm md:text-lg text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
-                    {skill.name}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-foreground/60 mt-1">
-                    {skill.level >= 80
-                      ? "Expert"
-                      : skill.level >= 60
-                      ? "Intermediate"
-                      : "Learning"}
-                  </p>
-                </div>
-                <div className="text-center">
-                  <span className="text-lg sm:text-xl md:text-2xl font-bold text-primary">
-                    {skill.level}%
-                  </span>
-                </div>
-              </div>
-
-              {/* Progress Bar */}
-              <div className="relative">
-                <div className="w-full h-2 sm:h-2.5 md:h-3 bg-secondary/50 rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full bg-gradient-to-r ${getSkillColor(
-                      skill.level
-                    )} transition-all duration-1000 ease-out relative overflow-hidden`}
-                    style={{
-                      width: `${skill.level}%`,
-                      animation: `grow 1.5s ease-out ${key * 0.1}s forwards`,
+              {/* Skill Content */}
+              <div className="flex flex-col items-center gap-3 sm:gap-4 relative z-10">
+                <div className="p-3 sm:p-3.5 md:p-4 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 group-hover:border-primary/40 transition-all duration-300 group-hover:scale-110">
+                  <img
+                    src={skill.image}
+                    alt={skill.name}
+                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      e.target.style.display = "none";
+                      e.target.nextSibling.style.display = "block";
                     }}
-                  >
-                    {/* Shimmer effect */}
-                    <div className="absolute inset-0 shimmer opacity-50"></div>
+                  />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-primary/20 rounded items-center justify-center text-primary font-bold text-sm sm:text-base md:text-lg hidden">
+                    {skill.name.charAt(0)}
                   </div>
                 </div>
-
-                {/* Skill level indicator */}
-                <div
-                  className="absolute top-1/2 -translate-y-1/2 w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-white border border-primary sm:border-2 rounded-full shadow-lg transition-all duration-1000 ease-out"
-                  style={{
-                    left: `calc(${skill.level}% - 4px)`,
-                    animation: `slide-to-position 1.5s ease-out ${
-                      key * 0.1
-                    }s forwards`,
-                  }}
-                ></div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-sm sm:text-base md:text-lg text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
+                    {skill.name}
+                  </h3>
+                </div>
               </div>
 
               {/* Hover glow effect */}
@@ -198,21 +167,13 @@ const SkillsSection = () => {
 
         {/* Stats Section */}
         <div className="mt-12 sm:mt-16 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto">
             <div className="glass-effect p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-border/50">
               <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">
                 {skills.length}
               </div>
               <div className="text-xs sm:text-sm text-foreground/70">
                 Total Skills
-              </div>
-            </div>
-            <div className="glass-effect p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-border/50">
-              <div className="text-2xl sm:text-3xl font-bold text-green-500 mb-2">
-                {skills.filter((s) => s.level >= 80).length}
-              </div>
-              <div className="text-xs sm:text-sm text-foreground/70">
-                Expert Level
               </div>
             </div>
             <div className="glass-effect p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-border/50">
