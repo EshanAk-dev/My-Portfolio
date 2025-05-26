@@ -36,7 +36,7 @@ const skills = [
 
   // mobile
   { name: "Flutter", category: "mobile", image: "/skills/flutter.png" },
-  { name: "Dart", category: "mobile", image: "/skills/dart.png" },
+  { name: "React Native", category: "mobile", image: "/skills/react-native.png" },
   { name: "Kotlin", category: "mobile", image: "/skills/kotlin.png" },
 
   // tools

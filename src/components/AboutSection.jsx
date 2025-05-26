@@ -5,7 +5,6 @@ const AboutSection = () => {
     { number: "2+", label: "Years Experience" },
     { number: "10+", label: "Projects Completed" },
     { number: "5+", label: "Technologies" },
-    { number: "100%", label: "Client Satisfaction" },
   ];
 
   return (
@@ -60,7 +59,7 @@ const AboutSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-6">
+            <div className="grid grid-cols-1 gap-3 sm:gap-4 lg:grid-cols-3 lg:gap-6">
               {stats.map((stat, index) => (
                 <div
                   key={index}
