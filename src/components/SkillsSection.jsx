@@ -15,12 +15,13 @@ const skills = [
   { name: "HTML", category: "frontend", image: "/skills/html.png" },
   { name: "CSS", category: "frontend", image: "/skills/css.png" },
   { name: "JavaScript", category: "frontend", image: "/skills/javascript.png" },
+  { name: "TypeScript", category: "frontend", image: "/skills/typescript.svg" },
   { name: "React", category: "frontend", image: "/skills/react.png" },
   { name: "Tailwind CSS", category: "frontend", image: "/skills/tailwind.png" },
 
   // backend
   { name: "Node.js", category: "backend", image: "/skills/nodejs.webp" },
-  { name: "Express", category: "backend", image: "/skills/express.png" },
+  { name: "Express.js", category: "backend", image: "/skills/express.png" },
   { name: "Java", category: "backend", image: "/skills/java.png" },
   {
     name: "Spring Boot",
@@ -44,6 +45,8 @@ const skills = [
   { name: "Git", category: "tools", image: "/skills/git.png" },
   { name: "Postman", category: "tools", image: "/skills/postman.png" },
   { name: "VS Code", category: "tools", image: "/skills/vscode.png" },
+  { name: "Android Studio", category: "tools", image: "/skills/android.png" },
+  { name: "IntelliJ IDEA", category: "tools", image: "/skills/intellij.png" },
 ];
 
 const categories = [
