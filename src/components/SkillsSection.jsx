@@ -38,6 +38,7 @@ const skills = [
   // mobile
   { name: "Flutter", category: "mobile", image: "/skills/flutter.png" },
   { name: "React Native", category: "mobile", image: "/skills/react-native.png" },
+  { name: "NativeWind", category: "mobile", image: "/skills/nativewind.png" }, 
   { name: "Kotlin", category: "mobile", image: "/skills/kotlin.png" },
 
   // tools

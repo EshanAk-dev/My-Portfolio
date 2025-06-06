@@ -1,19 +1,31 @@
-import {
-  ArrowRight,
-  ExternalLink,
-  Github,
-  Folder,
-  Star,
-} from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Folder, Star } from "lucide-react";
 import { useState } from "react";
 
 const projects = [
   {
     id: 1,
+    title: "Movie Discovery Mobile App",
+    description:
+      "A cross-platform React Native app for discovering, searching, and saving movies using the TMDB API. Features include Appwrite authentication, user profiles, and the ability to save favorite movies. Built with NativeWind, TypeScript and Appwrite backend.",
+    image: "/projects/project_1.png",
+    tags: [
+      "React Native",
+      "TypeScript",
+      "NativeWind",
+      "Appwrite",
+      "TMDB API",
+      "Appwrite Auth",
+    ],
+    demoUrl: "#",
+    github: "https://github.com/EshanAk-dev/Filmex",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Infinite Clothing Website",
     description:
       "A full-stack MERN application for a clothing store, featuring a t-shirt customization tool that lets users design and preview their own apparel in real-time before purchase.",
-    image: "/projects/project_1.png",
+    image: "/projects/project_2.png",
     tags: [
       "React",
       "Tailwind CSS",
@@ -27,33 +39,33 @@ const projects = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Infinite Flutter Application",
     description:
       "A cross-platform mobile app built with Flutter that allows users to browse and purchase products. It integrates with the Express.js backend from the Infinite Clothing Website for data syncing.",
-    image: "/projects/project_2.png",
+    image: "/projects/project_3.png",
     tags: ["Flutter", "Dart", "Node.js", "Express.js", "MongoDB", "Socket.io"],
     demoUrl: "#",
     github: "https://github.com/EshanAk-dev/Infinite-App",
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Kotlin News Reporting App",
     description:
       "A Kotlin-based Android application that enables reporters to submit and editors manage news reports. The app supports multiple user roles with Firebase Authentication and Firestore for real-time data management and role-based access.",
-    image: "/projects/project_3.png",
+    image: "/projects/project_4.png",
     tags: ["Kotlin", "Firebase", "Firebase Auth", "Firebase cloud", "Android"],
     demoUrl: "#",
     github: "https://github.com/EshanAk-dev/NewsPulse",
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Hotel Room Reservation Website",
     description:
       "A modern full-stack web application for hotel room booking with a React frontend and Spring Boot backend. Users can browse hotels, check room availability, book rooms, and manage their reservations. Admins can manage rooms, view bookings, and access statistics.",
-    image: "/projects/project_4.png",
+    image: "/projects/project_5.png",
     tags: [
       "React.js",
       "Bootstrap",
@@ -62,7 +74,7 @@ const projects = [
       "Spring Security",
       "Spring Data JPA",
       "MySQL",
-      "Java"
+      "Java",
     ],
     demoUrl: "#",
     github: "https://github.com/EshanAk-dev/Grand-Mount-Hotel",
