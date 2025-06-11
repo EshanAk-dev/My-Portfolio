@@ -17,6 +17,7 @@ const skills = [
   { name: "JavaScript", category: "frontend", image: "/skills/javascript.png" },
   { name: "TypeScript", category: "frontend", image: "/skills/typescript.svg" },
   { name: "React", category: "frontend", image: "/skills/react.png" },
+  { name: "Next.js", category: "frontend", image: "/skills/nextjs.png" },
   { name: "Tailwind CSS", category: "frontend", image: "/skills/tailwind.png" },
 
   // backend
@@ -37,8 +38,12 @@ const skills = [
 
   // mobile
   { name: "Flutter", category: "mobile", image: "/skills/flutter.png" },
-  { name: "React Native", category: "mobile", image: "/skills/react-native.png" },
-  { name: "NativeWind", category: "mobile", image: "/skills/nativewind.png" }, 
+  {
+    name: "React Native",
+    category: "mobile",
+    image: "/skills/react-native.png",
+  },
+  { name: "NativeWind", category: "mobile", image: "/skills/nativewind.png" },
   { name: "Kotlin", category: "mobile", image: "/skills/kotlin.png" },
 
   // tools
