@@ -49,11 +49,12 @@ const AboutSection = () => {
                   experiences.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg">
-                  My work spans across modern technologies like React, Node.js,
-                  MongoDB, Flutter, and Kotlin — allowing me to bring ideas to
-                  life across platforms. I'm always exploring the latest trends
-                  in tech, from cloud integrations to AI-powered features, to
-                  stay ahead of the curve and build future-ready solutions.
+                  My work spans across modern technologies like React, Next.js,
+                  React Native, Node.js, Flutter, and Kotlin — allowing
+                  me to bring ideas to life across platforms. I'm always
+                  exploring the latest trends in tech, from cloud integrations
+                  to AI-powered features, to stay ahead of the curve and build
+                  future-ready solutions.
                 </p>
               </div>
             </div>
