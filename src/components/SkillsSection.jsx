@@ -34,6 +34,8 @@ const skills = [
   // database
   { name: "MongoDB", category: "database", image: "/skills/mongodb.png" },
   { name: "MySQL", category: "database", image: "/skills/mysql.png" },
+  { name: "PostgreSQL", category: "database", image: "/skills/postgres.png" },
+  { name: "Prisma", category: "database", image: "/skills/prisma.png" },
   { name: "Oracle", category: "database", image: "/skills/oracle.png" },
 
   // mobile
@@ -47,7 +49,7 @@ const skills = [
   { name: "Kotlin", category: "mobile", image: "/skills/kotlin.png" },
 
   // tools
-  { name: "GitHub", category: "tools", image: "/skills/github.png" },
+  { name: "GitHub", category: "tools", image: "/skills/github.webp" },
   { name: "Git", category: "tools", image: "/skills/git.png" },
   { name: "Postman", category: "tools", image: "/skills/postman.png" },
   { name: "VS Code", category: "tools", image: "/skills/vscode.png" },

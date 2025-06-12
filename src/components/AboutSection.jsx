@@ -86,7 +86,7 @@ const AboutSection = () => {
               </a>
               <a
                 href="/eshan-cv.pdf"
-                download="Eshan_Akalanka_CV.pdf"
+                download="Eshan_Wijesinghe_CV.pdf"
                 className="px-6 py-2.5 sm:px-8 sm:py-3 rounded-full border-2 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 text-center backdrop-blur-sm text-sm sm:text-base"
               >
                 Download CV

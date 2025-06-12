@@ -52,7 +52,7 @@ const HeroSection = () => {
               </a>
               <a
                 href="/eshan-cv.pdf"
-                download="Eshan_Akalanka_CV.pdf"
+                download="Eshan_Wijesinghe_CV.pdf"
                 className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border-2 border-primary/30 text-foreground hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm text-sm sm:text-base"
               >
                 <Download className="w-3 h-3 sm:w-4 sm:h-4" />
